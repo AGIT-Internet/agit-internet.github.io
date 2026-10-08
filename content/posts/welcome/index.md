@@ -1,11 +1,11 @@
 ---
-title: "从这里开始"
+title: "Welcome"
 date: 2026-10-08
 slug: "welcome"
 draft: false
 categories: ["日常随笔"]
 tags: ["开篇"]
-description: "给大学生活留一份可以回看的记录。"
+description: "未来的某个当下"
 ShowToc: false
 ---
 
