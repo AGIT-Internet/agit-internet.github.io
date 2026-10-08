@@ -19,7 +19,7 @@ outputs:
 params:
   env: production
   author: "GalaxyVortex"
-  description: "记录大学生活、日常思考、技术探索与摄影。"
+  description: "希望在本科期间产生不错的impact。"
   defaultTheme: auto
   label:
     icon: "images/avatar.jpg"
@@ -41,8 +41,8 @@ params:
     category: "Announcements"
     categoryID: "DIC_kwDOVBN3ws4DHWMF"
   homeInfoParams:
-    Title: "把日子，慢慢写下来。"
-    Content: "关于大学生活、日常思考、技术探索，以及镜头里的片刻。"
+    Title: "在地球Online中探索意义"
+    Content: "原谅我这一生不羁放纵爱自由"
   fuseOpts:
     ignoreLocation: true
     threshold: 0.3
@@ -58,21 +58,21 @@ params:
 
 menu:
   main:
-    - name: "随笔"
+    - name: "Posts"
       url: "/posts/"
       weight: 10
-    - name: "分类"
+    - name: "Categories"
       url: "/categories/"
       weight: 20
-    - name: "摄影"
+    - name: "Photography"
       url: "/photography/"
       weight: 30
-    - name: "归档"
+    - name: "Archives"
       url: "/archives/"
       weight: 40
-    - name: "搜索"
+    - name: "Search"
       url: "/search/"
       weight: 50
-    - name: "关于"
+    - name: "About"
       url: "/about/"
       weight: 60
