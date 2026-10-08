@@ -1,6 +1,6 @@
-# 大学手记
+# GalaxyVortex's blog
 
-基于 Hugo + PaperMod 的个人博客。暖白背景、文字为主，支持手机、明暗主题、正文搜索、归档、RSS 和摄影索引。
+基于 Hugo + PaperMod 的个人博客。浅白与深灰配色、文字为主，支持手机、明暗主题、正文搜索、归档、RSS 和摄影索引。
 
 - 网站：https://agit-internet.github.io/
 - 仓库：https://github.com/AGIT-Internet/agit-internet.github.io
@@ -127,9 +127,10 @@ cover:
 - `content/about.md`：关于页面。
 - `assets/css/extended/journal.css`：背景色、字体、间距。
 - `layouts/_partials/home_info.html`：首页介绍。
-- `static/favicon.svg`：浏览器标签图标。
+- `assets/images/avatar.jpg`：页头头像及浏览器图标原图，Hugo 在构建时自动生成图标尺寸。
+- `static/fonts/`：本地 Inter 与 Noto Sans SC 字体及许可证。中文字体按字符范围分包，浏览器只加载当前页面需要的字形。
 
-作者名暂使用当前 Git 设置中的 GalaxyVortex，可随时修改。
+站名为 GalaxyVortex's blog，作者名为 GalaxyVortex，可在配置中修改。
 
 ## 更新主题
 

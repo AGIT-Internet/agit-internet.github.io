@@ -1,5 +1,5 @@
 baseURL: "https://agit-internet.github.io/"
-title: "大学手记"
+title: "GalaxyVortex's blog"
 locale: "zh-CN"
 defaultContentLanguage: "zh"
 hasCJKLanguage: true
@@ -21,6 +21,9 @@ params:
   author: "GalaxyVortex"
   description: "记录大学生活、日常思考、技术探索与摄影。"
   defaultTheme: auto
+  label:
+    icon: "images/avatar.jpg"
+    iconHeight: 32
   mainSections: [posts]
   DateFormat: "2006.01.02"
   disableSpecial1stPost: true
@@ -46,7 +49,12 @@ params:
     minMatchCharLength: 1
     keys: [title, summary, content]
   assets:
-    favicon: "/favicon.svg"
+    favicon: "/icons/avatar-256.png"
+    favicon16x16: "/icons/avatar-16.png"
+    favicon32x32: "/icons/avatar-32.png"
+    apple_touch_icon: "/icons/avatar-180.png"
+    safari_pinned_tab: "/avatar.svg"
+    theme_color: "#242424"
 
 menu:
   main:

@@ -1,0 +1,6 @@
+{{- /* Export the original avatar to standard icon sizes with Hugo's asset pipeline. */ -}}
+{{- $avatar := resources.Get "images/avatar.jpg" -}}
+{{- range slice 16 32 180 256 -}}
+  {{- $icon := $avatar.Resize (printf "%dx%d png" . .) -}}
+  {{- $published := (resources.Copy (printf "icons/avatar-%d.png" .) $icon).RelPermalink -}}
+{{- end -}}

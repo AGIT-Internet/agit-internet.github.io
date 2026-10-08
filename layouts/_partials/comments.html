@@ -21,7 +21,7 @@
   const syncTheme = () => {
     const frame = document.querySelector('iframe.giscus-frame');
     if (!frame) return;
-    const theme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+    const theme = document.documentElement.dataset.theme === 'dark' ? 'noborder_gray' : 'noborder_light';
     frame.contentWindow.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app');
   };
   new MutationObserver(syncTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
