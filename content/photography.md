@@ -1,9 +1,9 @@
 ---
-title: "摄影"
+title: "Photography"
 layout: "photography"
 searchHidden: true
 hiddenInRss: true
 comments: false
 ---
 
-用镜头记下走过的地方，和那些停下来看的瞬间。
+让镜头连接你我，永不分离
