@@ -1,0 +1,24 @@
+{{ define "main" }}
+<header class="page-header"><h1>{{ .Title }}</h1></header>
+<div class="gallery-intro">{{ .Content }}</div>
+{{ $photos := where site.RegularPages "Section" "posts" }}
+{{ $photos = where $photos "Params.categories" "intersect" (slice "摄影") }}
+{{ if $photos }}
+<div class="gallery-grid">
+  {{ range $photos.ByDate.Reverse }}
+  {{ $page := . }}
+  <a class="gallery-card" href="{{ .RelPermalink }}">
+    {{ with .Params.cover.image }}
+      {{ $imageURL := . | relURL }}
+      {{ with $page.Resources.GetMatch . }}{{ $imageURL = .RelPermalink }}{{ end }}
+      <img src="{{ $imageURL }}" alt="{{ $page.Params.cover.alt | default $page.Title }}" loading="lazy">
+    {{ end }}
+    <h2>{{ .Title }}</h2>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<div class="gallery-empty">照片会慢慢积攒，故事也会。<br>这里将留下镜头里的片刻。</div>
+{{ end }}
+{{ end }}

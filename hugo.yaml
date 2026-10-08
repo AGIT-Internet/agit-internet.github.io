@@ -1,0 +1,70 @@
+baseURL: "https://agit-internet.github.io/"
+title: "大学手记"
+locale: "zh-CN"
+defaultContentLanguage: "zh"
+hasCJKLanguage: true
+timeZone: "Asia/Shanghai"
+theme: "PaperMod"
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 8
+
+permalinks:
+  posts: "/posts/:slug/"
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+params:
+  env: production
+  author: "GalaxyVortex"
+  description: "记录大学生活、日常思考、技术探索与摄影。"
+  defaultTheme: auto
+  mainSections: [posts]
+  DateFormat: "2006.01.02"
+  disableSpecial1stPost: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+  TocOpen: false
+  comments: true
+  giscus:
+    enabled: true
+    repo: "AGIT-Internet/agit-internet.github.io"
+    repoID: "R_kgDOVBN3wg"
+    category: "Announcements"
+    categoryID: "DIC_kwDOVBN3ws4DHWMF"
+  homeInfoParams:
+    Title: "把日子，慢慢写下来。"
+    Content: "关于大学生活、日常思考、技术探索，以及镜头里的片刻。"
+  fuseOpts:
+    ignoreLocation: true
+    threshold: 0.3
+    minMatchCharLength: 1
+    keys: [title, summary, content]
+  assets:
+    favicon: "/favicon.svg"
+
+menu:
+  main:
+    - name: "随笔"
+      url: "/posts/"
+      weight: 10
+    - name: "分类"
+      url: "/categories/"
+      weight: 20
+    - name: "摄影"
+      url: "/photography/"
+      weight: 30
+    - name: "归档"
+      url: "/archives/"
+      weight: 40
+    - name: "搜索"
+      url: "/search/"
+      weight: 50
+    - name: "关于"
+      url: "/about/"
+      weight: 60

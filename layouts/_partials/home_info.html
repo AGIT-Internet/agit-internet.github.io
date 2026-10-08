@@ -1,0 +1,12 @@
+{{- with site.Params.homeInfoParams }}
+<section class="first-entry home-info">
+  <p class="journal-kicker">生活 · 学习 · 观察</p>
+  <header class="entry-header"><h1>{{ .Title | markdownify }}</h1></header>
+  <div class="entry-content">{{ .Content | markdownify }}</div>
+  <nav class="journal-links" aria-label="快捷导航">
+    <a href="{{ "archives/" | relURL }}">按时间阅读 ↗</a>
+    <a href="{{ "photography/" | relURL }}">镜头里的片刻 ↗</a>
+    <a href="{{ "index.xml" | relURL }}">订阅 RSS ↗</a>
+  </nav>
+</section>
+{{- end }}
