@@ -1,7 +1,7 @@
 ---
 title: "入学以来"
 date: 2026-10-16
-slug: "welcome"
+slug: "The First Post"
 draft: false
 categories: ["日常随笔"]
 tags: ["开篇"]
