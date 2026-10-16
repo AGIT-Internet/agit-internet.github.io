@@ -1,0 +1,4 @@
+- id: read_time
+  translation:
+    one: "预计阅读 1 分钟"
+    other: "预计阅读 {{ .Count }} 分钟"
